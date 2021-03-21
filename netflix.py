@@ -37,3 +37,6 @@ df['month_name_added']=df['date_added'].dt.month_name()
 df['year_added'] = df['date_added'].dt.year
 
 df.head(3)
+
+#Save as CSV
+df.to_csv(r'/Users/darshayblount/Documents/1 MSDA/DataViz/netflixpp.csv', index = False)
